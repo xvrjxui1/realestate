@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta name="viewport" content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0'>
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
 </head>
 <body>
-    <label class="nav-decorate"></label>
     <nav>
         <div class="nav-background"></div>
         <ul>
@@ -20,31 +21,116 @@
             <li>עלינו</li>
             <li>צור קשר</li>
         </ul>
+
+
+        <!-- <div class="logo-wrapper">
+            <img src="/images/logo.png">
+        </div> -->
+    
     </nav>
 
+
+
     <div class="hero-wrapper">
-        <img src="/hero.jpg" alt="Hero">
-        
+        <img src="/images/hero.jpg" alt="Hero">
+
         <span class="hero-wrapper__text">
             <h1>מחפשים דירה</h1>
             <h2>דירות בוטיק</h2>
             <h3>החל מ - 2,890,000</h3>
-            <span class="arrow-animation __first"></span>
-            <span class="arrow-animation __second"></span>
-
         </span>
 
     </div>
 
-    <div class="sticky-contact">
-        <div class="sticky-contact__wrapper">
+    <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
 
-            <span class="sticky-contact__text">
+    <div class="project-section __container">
+        <h1 class="--border-bottom">פרויקט צל הגבעה</h1>
+
+        <div class="project-section__wrapper">
+
+        </div>
+    </div>
+
+    <div class="dots">
+        <span  class="--yellow" ></span>
+        <span  class="--yellow" ></span>
+        <span  class="--yellow" ></span>
+    </div>
+
+    <div class="appartments-section __container">
+        <h1 class="--border-bottom ">הדירות</h1>
+
+        <div class="appartments-section__wrapper">
+            <div class="cards"><span><img src="/images/3rooms-garden.jpg"></span></div>
+            <div class="cards __active"><span><img src="/images/3rooms.jpg"></span></div>
+            <div class="cards"><span><img src="/images/5rooms.jpg"></span></div>
+            <!-- <div class="cards"><span><img src=""></span></div>
+            <div class="cards"><span><img src=""></span></div> -->
+        </div>
+        <h1><span></span></h1>
+
+        <div class="arrows-container">
+            <i class="fa-solid fa-angle-right"></i>
+            <i class="fa-solid fa-angle-left"></i>
+        </div>
+
+    </div>
+
+    <!-- <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div> -->
+
+    <!-- <div class="appartments-section__info">
+
+    </div> -->
+
+    <!-- <div class="building-section__info">
+
+    </div> -->
+
+    <!-- <div class="environment-section__container">
+
+        <div class="environment-section-wrapper">
+
+        </div>
+        
+        <button class="info-opener"></button>
+
+        <div class="environment-section__info">
+            
+        </div>
+    </div>  -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div class="fixed-contact">
+        <div class="fixed-contact__wrapper">
+
+            <span class="fixed-contact__text">
                 <h2>השאירו פרטים</h2>
                 <h4>אנחנו כבר נדאג להסביר לכם</h4>
             </span>
     
-            <span class="sticky-contact__inputs">
+            <span class="fixed-contact__inputs">
                 <form action="php-stuff">
     
                     <span >
@@ -59,12 +145,15 @@
                 </form>
             </span>
 
-            <span class="sticky-contact__checkbox">
+            <span class="fixed-contact__checkbox">
                 <input type="checkbox" id="checkbox">
                 <label for="checkbox"><h3>אני מאשר לקבל חומרי שיווק ופרסום</h3></label>
             </span>
+
             <button>שלח</button>
         </div>     
     </div>
+
+    <script src="/main.js"></script>
 </body>
 </html>
