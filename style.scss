@@ -198,7 +198,28 @@ html, body {
         flex-flow: row nowrap;
         align-items: center;
         justify-content: space-between;
-        margin-top: -10px;
+        margin-top: -5px;
+        
+        
+        h1 {
+            
+            font-size: 2em;
+            display: flex;
+            flex-direction: column;
+            margin-top: -1px;
+
+            span {
+                font-size: .8em;
+                color: rgba(235, 224, 187, 0.808) ;
+            }
+
+            &:nth-child(3) {
+                margin-top: .3em;
+                font-size: 2.2em;
+            }
+        }
+
+
 
         .cards {
             background-color: rgb(46, 46, 46);

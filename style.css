@@ -245,7 +245,29 @@ nav .logo-wrapper img {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: -10px;
+  margin-top: -5px;
+}
+
+.appartments-section .appartments-section__wrapper h1 {
+  font-size: 2em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: -1px;
+}
+
+.appartments-section .appartments-section__wrapper h1 span {
+  font-size: .8em;
+  color: rgba(235, 224, 187, 0.808);
+}
+
+.appartments-section .appartments-section__wrapper h1:nth-child(3) {
+  margin-top: .3em;
+  font-size: 2.2em;
 }
 
 .appartments-section .appartments-section__wrapper .cards {
