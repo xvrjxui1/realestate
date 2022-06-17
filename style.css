@@ -23,6 +23,7 @@
 }
 
 h1.--border-bottom {
+  font-size: 2.5em;
   position: relative;
   display: inline-block;
   color: #353535;
@@ -47,6 +48,7 @@ h1.--border-bottom.--yellow::after {
 
 html, body {
   height: 100%;
+  background-color: #f4f4f4;
 }
 
 nav {
@@ -188,7 +190,6 @@ nav .logo-wrapper img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: white;
 }
 
 .dots span {
@@ -197,6 +198,10 @@ nav .logo-wrapper img {
   border-radius: 10px;
   background-color: #C8E2C3;
   padding: 5px;
+}
+
+.dots .--yellow {
+  background-color: #ebe0bb;
 }
 
 .project-section, .__container {
@@ -261,7 +266,7 @@ nav .logo-wrapper img {
 }
 
 .appartments-section .appartments-section__wrapper h1 span {
-  font-size: .8em;
+  font-size: .6em;
   color: rgba(235, 224, 187, 0.808);
 }
 
@@ -312,6 +317,60 @@ nav .logo-wrapper img {
   text-align: center;
   color: #ebe0bb;
   font-size: 1.5em;
+}
+
+.appartments-section__info {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.appartments-section__info h1 {
+  margin-top: 1em;
+}
+
+.appartments-section__info .info__wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  margin-top: -5em;
+  background-image: url(/images/appartments-info.svg);
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.appartments-section__info .info__wrapper .img-circle {
+  position: absolute;
+  width: 30em;
+  height: 30em;
+  left: -5em;
+  top: 12%;
+}
+
+.appartments-section__info .info__wrapper .img-circle img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30em;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+}
+
+.appartments-section__info .appartments-info__text {
+  width: 100%;
+  height: 100%;
+  text-align: right;
+}
+
+.appartments-section__info .appartments-info__text ul {
+  position: relative;
+  top: 8em;
+  right: -6em;
+}
+
+.appartments-section__info .appartments-info__text ul li {
+  margin-bottom: 10px;
+  margin-right: 20%;
+  font-size: 1.4em;
 }
 
 .fixed-contact {
