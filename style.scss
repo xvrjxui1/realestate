@@ -178,6 +178,8 @@ html, body {
 
 
 //project-section
+
+//project-section
 .project-section, .__container {
     text-align: center;    
     width: 100%;
@@ -185,15 +187,65 @@ html, body {
     position: relative;
 
     .project-section__wrapper {
-        width: 70%;
+        width: 85%;
         height: 80%;
         background-color: rgb(235,235,235);
         position: absolute;
         bottom: 35px;
         right: 50%;
+        text-align: right;
         transform: translateX(50%);
+        h3{
+            font-size: 2em;
+        }
+        span{
+            font-size: 1.5em;
+        }
+        .upper-section-container{
+            height: 50%;
+            width: 100%;
+            // background-color: blue;
+            display: flex;
+           margin-top: 2em;
+           margin-right: 1em;
+            .upper-section-text-wrapper{
+                h1{
+                    font-size: 2.5em;
+                    letter-spacing: 1.5px;
+                }
+            }
+        }
+        .down-section-container{
+            height: 50%;
+            width: 100%;
+            // margin-right: 1em;
+            display: flex;
+            justify-content: space-between;
+            .down-section-apartment_button-container{
+                width: 15%;
+                display: flex;
+                justify-content: center;
+                margin-left:1em;
+                button{
+                    width: 100%;
+                    height:35%;
+                    background-color: rgb(235,224,187);
+                    border:none;
+                    font-size: 2em;
+                    margin-top: 1em;
+                }
+               
+            }
+            .down-section-text-wrapper{
+                display: flex;
+                flex-flow: column;
+                gap: 1em;
+                margin-right: 1em;
+            }
+        }
     }
 }
+
 
 
 //appartments-section
@@ -367,6 +419,7 @@ html, body {
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
+
     .environment-section__wrapper {
 
         height: 70%;
@@ -374,6 +427,28 @@ html, body {
         background-color: white;
         border-radius: 10px;
 
+
+        .environment-section__column-wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+
+            padding: 1em;
+
+            label {
+                display: flex;
+                flex-flow: row;
+                align-items: center;
+                justify-content: center;
+                width: 5em;
+                height: 2.5em;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.450);
+                font-size: 1.3em;
+                border-radius: 4px;
+            }
+        
+        }
     }
 }
 
@@ -388,7 +463,7 @@ html, body {
     .opacity-black{
         width: 100%;
         height: 100%;
-        background-image: linear-gradient(to bottom, black);
+        background-color: black;
         position: absolute;
         opacity: 0.6;
     }
@@ -399,12 +474,15 @@ html, body {
         height: 100%;
         z-index: 10;
     }
+
     .map-location-container,.people-group-container{
         align-items: center;
     }
+
     .hand-shake-container{
         align-items: flex-end;
     }
+
     .icon-container{
         display: flex;
         flex-flow: column;
@@ -441,8 +519,193 @@ html, body {
     color:rgb(179,179,179)
 }
 
+//about us
+.about_us-section-container{
+    width: 100%;
+    .about_us-header-container{
+        width: 100%;
+        text-align: center;
+        display: flex;
+        flex-flow: column;
+        gap:4em;
+        .about_us-header-fline{
+            width: 100%;
+        }
+        .about_us-header-sline{
+            width: 100%;
+            display: flex;
+            flex-flow: column;
+            gap:0.6em;
+            h1{
+                color: rgb(53, 53, 53);
+                font-size: 4em;
+                letter-spacing: 1px;
+                font-weight: normal;
+            }
+            h2{
+                color: rgb(53, 53, 53);
+                font-size: 3em;
+                letter-spacing: 1.5px;
+                font-weight: normal;
+            }
+        }
+    }
+    
+    .about_us-explained-container{
+        
+        position: relative;
+        width: 100%;
+        height: 1000px;
+        // border:1px solid black;
+        background-image: linear-gradient(5deg,#f4f4f4 0%,#f4f4f4 15%,rgb(64,64,64) 15%,rgb(64,64,64) 85%,#f4f4f4 85%);
+        .logo-wrapper{
+            display: flex;
+            justify-content: flex-end;
+            img{
+                width:400px;
+                height: 400px;
+            }
+        }
+        .company_info-container{
+            margin-right: 2em;
+            display: flex;
+            flex-flow: column;
+            gap:2.5em;
+            h1,h2{
+                font-weight: normal;
+            }
+            .finfo-section,.sinfo-section{
+                display: flex;
+                flex-flow: column;
+                gap:5px;
+            }
+            .finfo-section{
+                color:rgb(148,160,155);
+                h2{
+                    font-size: 1.8em;
+                    letter-spacing: 1px;
+                }
+            }
+            .sinfo-section{
+                color:rgb(235,224,187);
+                span{
+                    color:white;
+                }
+                h1{
+                    font-size: 2.2em;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        .company_plans-wrapper{
+            button{
+                border: none;
+                background-color: rgb(148,160,155);
+                color:white;
+                width:10em;
+                height: 4.5em;
+                font-size: 2em;
+                letter-spacing: 1.5px;
+                border-radius: 10px;
+            }
+        }
+
+    }
+}
+
+////////end page contact 
+.end_page-contact-section{
+    width: 100%;
+    height: 900px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row nowrap;
+
+    .contact-container{
+        margin-top: 20%;
+        position: relative;
+        left :0;
+        display: flex;
+        flex-flow: column;
+        gap:2em;
+        height:450px;
+        width:500px ;
+        background-color: #65AE87;
+        border-radius: 15px;
+        color:white;
+        padding-top: 40px;
+        .form-header{
+            
+            h1{
+                text-align: center;
+                font-size: 3em;
+                letter-spacing: 2px;
+                font-weight: normal;
+            }
+            h2{
+                font-size: 2em;
+                font-weight: normal;
+                padding-right: 60px;
+            }
+        }
+        .form-wrapper{
+            padding-right: 60px;
+            form{
+                .inputs-container{
+                    display: flex;
+                    flex-flow: column;
+                    gap:1em;
+                    .checkbox-wrapper{
+                        h3{
+                            display: inline;
+                        }
+                    }
+                    .input-wrapper{
+                        color:black;
+                        input{
+                            margin-right:1em ;
+                            border:none;
+                            outline: none;
+                            height: 100%;
+                            font-size: 1em;
+                        }
+                        span{
+                            display: inline-block;
+                            height: 3em;
+                            width:calc(300px + 2em);
+                            background-color: white;
+                            label{
+                                margin-right:1em ;
+                                display: inline-block;
+                                margin-top: 1em;
+                                height: 100%;
+                            }
+                        }
+                    }
+                    .submit-wrapper{
+                        height: 50px;
+                        input{
+                            border-radius: 8px;
+                            border:none;
+                            background-color: white;
+                            width:150px;
+                            font-size: 2em;
+                            height: 100%;
+
+                        }  
+                    }
+                }
+            }
+        }
+    }
+}
+
 
 // fixed contact form
+
+    .fixed-contact__mobile {
+        display: none;
+    }
   .fixed-contact {
     display: inline-flex;
     flex-flow: row nowrap;
@@ -583,4 +846,40 @@ input[type="checkbox"] + label:hover::before {
     
   }
 
+// fixed contact form - mobile
 
+@media screen and (max-width:980px) {
+    body .fixed-contact .fixed-contact__wrapper {
+        display: none;
+    }
+    body .fixed-contact__mobile {
+        width: 100%;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-evenly;
+
+        .fixed-contact__mobile-wrapper {
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            
+            h1 {
+                font-size: 1em;
+                margin-top: .5em;
+            }
+
+            i {
+                color:black;
+                font-size: 2.2em;
+            }
+        }
+    
+    }
+
+} 
+
+
+@media screen and (max-width:1650px) { 
+
+}
