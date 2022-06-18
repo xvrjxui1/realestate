@@ -67,7 +67,7 @@ nav {
   position: fixed;
   -webkit-box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.45);
           box-shadow: 1px 0px 10px rgba(0, 0, 0, 0.45);
-  z-index: 10;
+  z-index: 100;
 }
 
 nav .nav-background {
@@ -103,6 +103,7 @@ nav ul li {
   margin-right: 2em;
   color: black;
   font-size: 1.3em;
+  cursor: pointer;
 }
 
 nav ul li:nth-child(1) {
@@ -224,6 +225,7 @@ nav .logo-wrapper img {
 }
 
 .project-section .project-section__wrapper, .__container .project-section__wrapper {
+  padding: 1.5em;
   width: 85%;
   height: 80%;
   background-color: #ebebeb;
@@ -237,6 +239,7 @@ nav .logo-wrapper img {
 
 .project-section .project-section__wrapper h3, .__container .project-section__wrapper h3 {
   font-size: 2em;
+  color: #464232;
 }
 
 .project-section .project-section__wrapper span, .__container .project-section__wrapper span {
@@ -251,6 +254,16 @@ nav .logo-wrapper img {
   display: flex;
   margin-top: 2em;
   margin-right: 1em;
+}
+
+.project-section .project-section__wrapper .upper-section-container .upper-section-svg-wrapper, .__container .project-section__wrapper .upper-section-container .upper-section-svg-wrapper {
+  margin-right: auto;
+  margin-left: 5em;
+}
+
+.project-section .project-section__wrapper .upper-section-container .upper-section-svg-wrapper svg, .__container .project-section__wrapper .upper-section-container .upper-section-svg-wrapper svg {
+  width: 100%;
+  height: 100%;
 }
 
 .project-section .project-section__wrapper .upper-section-container .upper-section-text-wrapper h1, .__container .project-section__wrapper .upper-section-container .upper-section-text-wrapper h1 {
@@ -270,7 +283,6 @@ nav .logo-wrapper img {
 }
 
 .project-section .project-section__wrapper .down-section-container .down-section-apartment_button-container, .__container .project-section__wrapper .down-section-container .down-section-apartment_button-container {
-  width: 15%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -281,12 +293,21 @@ nav .logo-wrapper img {
 }
 
 .project-section .project-section__wrapper .down-section-container .down-section-apartment_button-container button, .__container .project-section__wrapper .down-section-container .down-section-apartment_button-container button {
-  width: 100%;
-  height: 35%;
+  width: 6em;
+  height: 3em;
   background-color: #ebe0bb;
   border: none;
   font-size: 2em;
   margin-top: 1em;
+  margin-left: 3em;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.project-section .project-section__wrapper .down-section-container .down-section-apartment_button-container button:hover, .__container .project-section__wrapper .down-section-container .down-section-apartment_button-container button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .project-section .project-section__wrapper .down-section-container .down-section-text-wrapper, .__container .project-section__wrapper .down-section-container .down-section-text-wrapper {
@@ -489,10 +510,33 @@ nav .logo-wrapper img {
 }
 
 .environment-section .environment-section__wrapper {
+  margin-top: -5em;
   height: 70%;
-  width: 60%;
+  width: 80%;
   background-color: white;
+  border-bottom: 3px solid #ebe0bb;
   border-radius: 10px;
+}
+
+.environment-section .environment-section__wrapper .environment-section__row-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.environment-section .environment-section__wrapper .environment-section__row-wrapper ul {
+  font-size: 1.5em;
+  text-align: right;
 }
 
 .environment-section .environment-section__wrapper .environment-section__column-wrapper {
@@ -525,11 +569,17 @@ nav .logo-wrapper img {
           justify-content: center;
   width: 5em;
   height: 2.5em;
-  background-color: white;
-  -webkit-box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
-          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.45);
+  background-color: #ebe0bb;
   font-size: 1.3em;
   border-radius: 4px;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.environment-section .environment-section__wrapper .environment-section__column-wrapper label:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .map-container {
@@ -756,6 +806,14 @@ nav .logo-wrapper img {
   font-size: 2em;
   letter-spacing: 1.5px;
   border-radius: 10px;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.about_us-section-container .about_us-explained-container .company_plans-wrapper button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .end_page-contact-section {
@@ -948,6 +1006,14 @@ nav .logo-wrapper img {
   background-color: #353535;
   margin-right: auto;
   margin-left: 4vw;
+  cursor: pointer;
+  -webkit-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.fixed-contact .fixed-contact__wrapper button:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
 }
 
 .fixed-contact [type="checkbox"] {
