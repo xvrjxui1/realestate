@@ -9,18 +9,21 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" /> 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>   
+    <script src="./script/nautilus.slider.min.js"></script>
 </head>
 <body>
     <nav>
-        <div class="nav-background"></div>
-        <ul>
-            <li>הפרויקט</li>
-            <li>הדירות</li>
-            <li>הבניין</li>
-            <li>הסביבה</li>
-            <li>עלינו</li>
-            <li>צור קשר</li>
-        </ul>
+        <div class="nav-background">
+            <ul>
+                <li id="project">הפרויקט</li>
+                <li id="appartments">הדירות</li>
+                <li id="building">הבניין</li>
+                <li id="environment">הסביבה</li>
+                <li id="about-us">עלינו</li>
+                <li id="contact-us">צור קשר</li>
+            </ul>
+        </div>
+
 
 
         <!-- <div class="logo-wrapper">
@@ -48,7 +51,7 @@
         <span></span>
     </div>
 
-    <div class="project-section __container">
+    <div class="project-section __container" id="project-a">
         <h1 class="--border-bottom">פרויקט צל הגבעה</h1>
 
         <div class="project-section__wrapper">
@@ -130,7 +133,7 @@
                     </div>
                 </div>
                 <div class="down-section-apartment_button-container">
-                    <button class="apartment-button">לדירות</button>
+                    <button class="appartment-bitch">לדירות</button>
                 </div>
             </div>
         </div>
@@ -143,21 +146,36 @@
         <span  class="--yellow" ></span>
     </div>
 
-    <div class="appartments-section __container">
+    <div class="appartments-section __container" id="appartments-a">
         <h1 class="--border-bottom ">הדירות</h1>
 
-        <div class="appartments-section__wrapper">
-            <div class="cards"><span><img src="./images/3rooms-garden.jpg"></span> <h1>דירות גן<span><span></span></span></h1></div>
-            <div class="cards __active"><span><img src="./images/3rooms.jpg"></span> <h1>דירות 3 חדרים<span>75מ״ר + 10מ״ר</span><h1>החל מ - 2,890,000</h1></h1></div>
-            <div class="cards"><span><img src="./images/5rooms.jpg"></span> <h1>דירות 5 חדרים<span><span></span></span></h1></div>
-            <!-- <div class="cards"><span><img src=""></span></div>
-            <div class="cards"><span><img src=""></span></div> -->
+        <div class="--nautilus-slider" style=" width: 100%; position: relative; overflow: hidden; height: 400px; "> 
+            <div class="slider"> 
+
+                <div class="slide active">
+                    <div class="cards"><span><img src="./images/3rooms.jpg"></span> <h1>דירות 3 חדרים<span>75מ״ר + 10מ״ר</span><h1>החל מ - 2,890,000</h1></h1></div>
+                </div>
+
+                <div class="slide next">
+                    <div class="cards"><span><img src="./images/5rooms.jpg"></span> <h1>דירות 5 חדרים<span><span></span></span></h1></div>
+                </div> 
+
+                <div class="slide">
+                    <div class="cards"><span><img src="./images/3rooms-garden.jpg"></span> <h1>דירות גן<span><span></span></span></h1></div>
+                </div> 
+
+                <div class="slide">
+                    <div class="cards"><span><img src="./images/duplex.png"></span> <h1>דירות דופלקס<span><span></span></span></h1></div>
+                </div> 
+                <div class="slide prev">
+                    <div class="cards"><span><img src="./images/5rooms-premium.jpg"></span> <h1>דירות 5 חדרים פרימיום<span><span></span></span></h1></div>
+                </div>  
+            </div> 
         </div>
-        <h1><span></span></h1>
 
         <div class="arrows-container">
-            <i class="fa-solid fa-angle-right"></i>
-            <i class="fa-solid fa-angle-left"></i>
+            <i class="fa-solid fa-angle-right" id="right"></i>
+            <i class="fa-solid fa-angle-left" id="left"></i>
         </div>
 
     </div>
@@ -202,7 +220,7 @@
         <span class="--blue"></span>
     </div>
 
-    <div class="building-section__info __container">
+    <div class="building-section__info __container" id="building-a">
         <h1 class="--border-bottom --blue">מפרט בניין</h1>
 
         <div class="info__wrapper">
@@ -238,7 +256,7 @@
     </div>
 
 
-    <div class="environment-section __container">
+    <div class="environment-section __container" id="environment-a">
         
         <div class="environment-section__wrapper">
             <div class="environment-section__column-wrapper">
@@ -325,7 +343,7 @@
         <span></span>
         <span></span>
     </div>
-    <div class="about_us-section-container">
+    <div class="about_us-section-container" id="about-us-a">
         <div class="about_us-header-container">
             <div class="about_us-header-fline">
                 <h1 class="--border-bottom curdef">אז.. קצת עלינו</h1>
@@ -360,7 +378,7 @@
         </div>
         <div class="check"></div>
     </div>
-    <div class="end_page-contact-section">
+    <div class="end_page-contact-section" id="contact-us-a">
         <div class="information-text">
             <h1>אם הגעת עד לכאן..</h1>
             <h1>השאר את הפרטים שלך</h1>
@@ -502,6 +520,14 @@
         </div>  
     </div>
 
-    <script src="./main.js"></script>
+    <script src="./script/main.js"></script>
+    <script>
+            nautilusSlider({
+            container:'.--nautilus-slider',
+            prevBtn:'#left',nextBtn:'#right',
+            slideWidth:'21em',
+            slideHeight:'20em'
+        });
+    </script>
 </body>
 </html>

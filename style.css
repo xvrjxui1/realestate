@@ -65,9 +65,7 @@ button:hover, input[type=submit]:hover {
 }
 
 html, body {
-  height: 100%;
   background-color: #f4f4f4;
-  overflow-x: hidden;
 }
 
 nav {
@@ -82,9 +80,7 @@ nav {
 }
 
 nav .nav-background {
-  position: absolute;
-  background: white;
-  opacity: .3;
+  background: rgba(255, 255, 255, 0.286);
   width: 100%;
   height: 100%;
 }
@@ -104,7 +100,6 @@ nav ul {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
-  position: absolute;
 }
 
 nav ul li {
@@ -339,24 +334,11 @@ nav .logo-wrapper img {
   border-bottom: 3px solid #ebe0bb;
 }
 
-.appartments-section .appartments-section__wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-flow: row nowrap;
-          flex-flow: row nowrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: -5px;
+.appartments-section .--nautilus-slider {
+  margin-top: 3em;
 }
 
-.appartments-section .appartments-section__wrapper h1 {
+.appartments-section .--nautilus-slider h1 {
   font-size: 2em;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -365,39 +347,31 @@ nav .logo-wrapper img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin-top: -1px;
 }
 
-.appartments-section .appartments-section__wrapper h1 span {
+.appartments-section .--nautilus-slider h1 span {
   font-size: .6em;
   color: rgba(235, 224, 187, 0.808);
 }
 
-.appartments-section .appartments-section__wrapper h1:nth-child(3) {
+.appartments-section .--nautilus-slider h1:nth-child(3) {
   margin-top: .3em;
   font-size: 2.2em;
 }
 
-.appartments-section .appartments-section__wrapper .cards {
+.appartments-section .--nautilus-slider .cards {
   background-color: #2e2e2e;
-  gap: 1em;
-  width: 25em;
-  height: 16em;
-  margin-top: 4em;
-  position: relative;
+  width: 100%;
+  height: 100%;
   padding-top: 10px;
   padding-bottom: 2em;
   padding-right: 1em;
   padding-left: 1em;
 }
 
-.appartments-section .appartments-section__wrapper .cards span img {
+.appartments-section .--nautilus-slider .cards span img {
   width: 100%;
-}
-
-.appartments-section .appartments-section__wrapper .__active {
-  height: 24em;
-  width: 30em;
+  height: 10em;
 }
 
 .arrows-container {
@@ -418,12 +392,20 @@ nav .logo-wrapper img {
 
 .arrows-container .fa-solid {
   text-align: center;
-  color: #ebe0bb;
+  color: lightgray;
   font-size: 1.5em;
+  cursor: pointer;
+  -webkit-transition: .5s linear;
+  transition: .5s linear;
+}
+
+.arrows-container .fa-solid:hover {
+  color: white;
 }
 
 .appartments-section__info {
   position: relative;
+  overflow-x: hidden;
 }
 
 .appartments-section__info h1 {
@@ -470,6 +452,10 @@ nav .logo-wrapper img {
   border-radius: 30em;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+}
+
+.building-section__info {
+  overflow-x: hidden;
 }
 
 .building-section__info .building-info__text ul {
