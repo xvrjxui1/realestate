@@ -175,6 +175,7 @@ nav .logo-wrapper img {
   color: white;
   font-size: 4em;
   top: 15%;
+  letter-spacing: 5px;
 }
 
 .hero-wrapper__text h2 {
@@ -321,6 +322,7 @@ nav .logo-wrapper img {
 
 .appartments-section {
   background-color: #464232;
+  height: auto;
 }
 
 .appartments-section h1 {
@@ -362,15 +364,29 @@ nav .logo-wrapper img {
   background-color: #2e2e2e;
   width: 100%;
   height: 100%;
-  padding-top: 10px;
-  padding-bottom: 2em;
-  padding-right: 1em;
-  padding-left: 1em;
+  padding-top: 5px;
+  padding-bottom: 1em;
+  padding-right: .5em;
+  padding-left: .5em;
 }
 
 .appartments-section .--nautilus-slider .cards span img {
   width: 100%;
   height: 10em;
+}
+
+.appartments-section .--nautilus-slider .cards .cards-button {
+  background-color: #65AE87;
+  padding: 5px;
+  margin-top: .3em;
+  text-decoration: none;
+  border: none;
+  border-radius: 2px;
+}
+
+.appartments-section .--nautilus-slider .cards .cards-button h1 {
+  color: white;
+  font-size: 1.3em;
 }
 
 .arrows-container {
@@ -400,6 +416,10 @@ nav .logo-wrapper img {
 
 .arrows-container .fa-solid:hover {
   color: white;
+}
+
+.appartments-text {
+  padding: 10px;
 }
 
 .appartments-section__info h1 {

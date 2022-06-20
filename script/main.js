@@ -50,14 +50,14 @@
     
     
     setTimeout(()=>{
-        $("#looking").animate({opacity:'1',top:'25%'},1000)
+        $("#looking").animate({opacity:'1',top:'25%'},800)
     },500)
     setTimeout(()=>{
-        $("#butic").animate({opacity:'1',top:'45%'},2000)
+        $("#butic").animate({opacity:'1',top:'45%'},1500)
     },1000)
     setTimeout(()=>{
         $("#prices").animate({opacity:'1',top:'50%'},1000)
-    },2500)
+    },1500)
     
     
     dotsanimation=()=>{
